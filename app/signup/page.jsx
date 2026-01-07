@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { supabase } from '@/lib/supabaseClient'
+import Link from 'next/link'  // ← add this
 
 export default function SignupPage() {
   const [email, setEmail] = useState('')
@@ -56,6 +57,11 @@ export default function SignupPage() {
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
       )}
+
+      <p>Already have an account?</p>
+      <Link href="/login">
+        <button>Sign In</button>
+      </Link>
     </div>
   )
 }

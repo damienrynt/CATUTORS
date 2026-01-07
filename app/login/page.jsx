@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { supabase } from '@/lib/supabaseClient'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'  // ← added this line
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -44,6 +45,11 @@ export default function LoginPage() {
         <button>Login</button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </form>
+
+      <p>New to CAtutors?</p>
+      <Link href="/signup">
+        <button>Sign Up</button>
+      </Link>
     </div>
   )
 }
