@@ -49,5 +49,5 @@ export default function ProtectedLayout({ children }) {
 
   if (loading) return <p>Loading...</p>
 
-  return children
+  return children 
 }
