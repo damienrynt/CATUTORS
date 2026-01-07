@@ -12,7 +12,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h1>Welcome — Dashboard Loaded</h1>
+      <h1>Yashar si tu vois ca dm moi SHLAG514</h1>
       <button onClick={handleLogout}>
         Logout
       </button>
